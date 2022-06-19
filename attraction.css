@@ -1,0 +1,107 @@
+
+      * {
+        color: grey;
+      }
+
+      .head {
+        padding: 5px 30px;
+      }
+
+      h1 {
+        color: rgb(95, 74, 74);
+        padding: 5px;
+        text-align: center;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      .top {
+        text-align: center;
+        color: rgb(68, 62, 62);
+      }
+
+      #atlantis {
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      li.top4 {
+        font-weight: bold;
+        color: rgb(96, 95, 95);
+      }
+
+      tr > .title {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      ul > li {
+        font-size: 15px;
+      }
+
+      body .bold {
+        color: rgb(73, 72, 72);
+        font-weight: bold;
+      }
+
+      body .explain {
+        padding: 5px 15px;
+      }
+
+      .explain + pre {
+        font-weight: bold;
+      }
+
+      .top4 ~ li {
+        font-size: 18px;
+      }
+
+      a:hover {
+        color: aqua;
+      }
+
+      a:active {
+        font-size: 30px;
+      }
+
+      input {
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 8px;
+      }
+
+      input:focus {
+        background-color: aquamarine;
+      }
+
+      .attraction-table tr:first-child {
+        background-color: beige;
+      }
+
+      .attraction-table tr:nth-child(2n) {
+        background-color: #c4ffff;
+      }
+
+      .attraction-table tr:nth-child(2n + 1) {
+        background-color: beige;
+      }
+
+      .attraction-table *:not(th) {
+        color: brown;
+      }
+
+      .attraction-table tr:last-child {
+        background-color: antiquewhite;
+      }
+
+      .box::before {
+            content: "어트렉션";
+        }
+
+        .box::after {
+            content: "환영해요";
+        }
+
