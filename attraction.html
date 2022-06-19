@@ -5,32 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>놀이기구</title>
+
+    <style>
+      * {
+        color: grey;
+      }
+
+      .head {
+        padding: 5px 30px;
+      }
+
+      h1 {
+        color: rgb(95, 74, 74);
+        padding: 5px;
+        text-align: center;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      .top {
+        text-align: center;
+        color: rgb(68, 62, 62);
+      }
+
+      #atlantis {
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      li.top4 {
+        font-weight: bold;
+        color: rgb(96, 95, 95);
+      }
+
+      tr > .title {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      ul > li {
+        font-size: 15px;
+      }
+
+      body .bold {
+        color: rgb(73, 72, 72);
+        font-weight: bold;
+      }
+
+      body .explain {
+        padding: 5px 15px;
+      }
+
+      .explain + pre {
+        font-weight: bold;
+      }
+
+      .top4 ~ li {
+        font-size: 18px;
+      }
+
+      a:hover {
+        color: aqua;
+      }
+
+      a:active {
+        font-size: 30px;
+      }
+
+      input {
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 8px;
+      }
+
+      input:focus {
+        background-color: aquamarine;
+      }
+
+      .attraction-table tr:first-child {
+        background-color: beige;
+      }
+
+      .attraction-table tr:nth-child(2n) {
+        background-color: #c4ffff;
+      }
+
+      .attraction-table tr:nth-child(2n + 1) {
+        background-color: beige;
+      }
+
+      .attraction-table *:not(th) {
+        color: brown;
+      }
+
+      .attraction-table tr:last-child {
+        background-color: antiquewhite;
+      }
+    </style>
   </head>
   <body>
-    <table border="1">
+    <div class="attraction">
       <h1>롯데월드 어트랙션</h1>
       <hr />
-      <h2>놀이기구 Top 4</h2>
-      <ol type="1">
-        <li>아틀란티스</li>
+      <h2 class="head">놀이기구 Top 4</h2>
+      <ol>
+        <li class="top4" id="atlantis">아틀란티스</li>
         <ul>
           <li>탑승인원:8명</li>
           <li>135cm이상 ~ 190cm이하 허리 38인치 이하 65세 이하 탑승 가능</li>
           <br />
         </ul>
-        <li>혜성특급</li>
+        <li class="top4">혜성특급</li>
         <ul>
           <li>탑승인원:26명</li>
           <li>120cm 이상 65세 이하 탑승 가능</li>
           <br />
         </ul>
-        <li>자이로스윙</li>
+        <li class="top4">자이로스윙</li>
         <ul>
           <li>탑승인원:40명</li>
           <li>130cm이상 ~ 190cm이하 65세 이하 탑승 가능</li>
           <br />
         </ul>
-        <li>후렌치 레볼루션</li>
+        <li class="top4">후렌치 레볼루션</li>
         <ul>
           <li>탑승인원:28명</li>
           <li>120cm이상 65세 이하 탑승 가능</li>
@@ -39,59 +139,90 @@
       </ol>
       <hr />
       <br />
-      <p>
+      <p class="explain">
         <b>주관적</b>으로 추천하는 <i><u>롯데월드 어트랙션</u></i> 놀이기구
         입니다.
       </p>
       <pre>
-  * 노약자나 임산부 심약자는 탑승을 권하지 않습니다. <br /><br />
-</pre
-      >
-
+  * 노약자나 임산부 심약자는 탑승을 권하지 않습니다.
+      </pre>
+    </div>
+    <table border="1px" class="attraction-table">
       <tr>
-        <th>놀이기구</th>
-        <th>설명</th>
-        <th>영상</th>
+        <th class="bold">놀이기구</th>
+        <th class="bold">설명</th>
+        <th class="bold">영상</th>
       </tr>
       <tr>
-        <td><img src="아틀란티스.jpg" alt="아트란티스 사진"/>
-        <br>아트란티스</td>
+        <td class="title">
+          <img src="아틀란티스.jpg" alt="아트란티스 사진" /> <br />아트란티스
+        </td>
         <td>
           최고 스릴 어트랙션! <b>시속 72km</b>로 출발하는 보트를 <br />타고
           미스터리 신전 속으로 여행을 떠나보세요!
         </td>
-        <td><a href="https://youtu.be/Mkb5rvyeJBQ" target="_self">아트란티스<br>영상보기!</a></td>
+        <td>
+          <a href="https://youtu.be/Mkb5rvyeJBQ" target="_self"
+            >아트란티스<br />영상보기!</a
+          >
+        </td>
       </tr>
       <tr>
-        <td><img src="혜성특급.jpg" alt="혜성특급 사진"/>
-          <br>혜성특급</td>
+        <td class="title">
+          <img src="혜성특급.jpg" alt="혜성특급 사진" /> <br />혜성특급
+        </td>
         <td>
           <i><b>좌우로 회전</b></i
           >하는 롤러코스터를 타고 떠나는 어둠 속 스펙터클 우주여행
         </td>
-        <td><a href="https://youtu.be/hLx6VOOHFQA" target="_blank">혜성특급<br>영상보기!</a></td>
+        <td>
+          <a href="https://youtu.be/hLx6VOOHFQA" target="_blank"
+            >혜성특급<br />영상보기!</a
+          >
+        </td>
       </tr>
 
       <tr>
-        <td><img src="자이로스윙.jpg" alt="자이로스윙 사진" />
-          <br>자이로스윙</td>
+        <td class="title">
+          <img src="자이로스윙.jpg" alt="자이로스윙 사진" /> <br />자이로스윙
+        </td>
         <td>
           40여명이 둘러앉은 거대한 회전기구가 시계추처럼 움직여<br />
           회오리바람에 날려가 버리는 듯한 <strong>새로운 공포</strong>를 느낄 수
           있습니다.
         </td>
-        <td><a href="https://youtu.be/j6Mn1_wToPw" target="_self">자이로스윙<br>영상보기!</a></td>
+        <td>
+          <a href="https://youtu.be/j6Mn1_wToPw" target="_self"
+            >자이로스윙<br />영상보기!</a
+          >
+        </td>
       </tr>
 
       <tr>
-        <td><img src="후렌치 (1).jpg" alt="후렌치 레볼루션 사진"/><br>후렌치 레볼루션</td>
+        <td class="title">
+          <img src="후렌치 (1).jpg" alt="후렌치 레볼루션 사진" /><br />후렌치
+          레볼루션
+        </td>
         <td>
           롯데월드 어드벤처의 대표 롤러코스터! <b>짜릿한 하강</b>과 <br />
           <strong>정신이 아득</strong>해지는 원형 트랙에서 저세상 스릴을
           느껴보세요!
         </td>
-        <td><a href="https://youtu.be/LlXIqEGM68A" target="_blank">후렌치 레볼루션<br>영상보기!</a></td>
+        <td>
+          <a href="https://youtu.be/LlXIqEGM68A" target="_blank"
+            >후렌치 레볼루션<br />영상보기!</a
+          >
+        </td>
       </tr>
     </table>
+
+    <div style="margin-top: 20px">
+      제일 타고싶은 놀이기구는???
+      <input
+        type="text"
+        placeholder="이름"
+        style="margin-left: 10px; display: inline-block"
+      />
+    </div>
   </body>
 </html>
